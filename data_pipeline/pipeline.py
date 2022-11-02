@@ -39,6 +39,11 @@ def create_drugs_graph(filename_trials, filename_pubmed_csv,
 
 if __name__ == "__main__":
 
+    # Dans le cas où la taille de nos fichiers serait de plusieurs To, il sera nécessaire d'héberger ces fichiers hors de ce repo.
+    # Dans des buckets aws ou gcp par exemple. Dans ce cas, nous aurions besoin des chemins d'accés à ces fichiers à la place des chemins relatifs ci aprés
+
+    # Aussi, si nous avions plusieurs millions de fichiers, nos fonctions de lecture des differents type de fichiers devra être mise à jour pour boucler sur chacun de ces types
+    # et récupérer les infos qu'il nous faut
     drugs_file_csv_path = os.path.join(
         os.path.dirname(os.path.dirname(os.path.abspath(__file__))),
         "raw_data", "drugs.csv")
