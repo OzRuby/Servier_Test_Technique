@@ -7,4 +7,4 @@ Etant donné les 4 fichiers suivants :
 
 Générer un fichier json représentant un graphe de liaison entre les différents médicaments et leurs mentions respectives dans les différentes publications PubMed, les différentes publications scientifiques et enfin les journaux avec la date associée à chacune de ces mentions
 
-![](images/graphe.png)
+![](images/graphe.PNG)
